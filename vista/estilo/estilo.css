@@ -1,0 +1,184 @@
+/* Estilos generales */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Contenedor principal */
+    .container {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 2rem;
+        border-radius: 15px ;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 90%;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    /* Estilos para los enlaces de redes sociales */
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-link:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-link i {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        width: 30px;
+        text-align: center;
+    }
+
+    .social-link span {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    /* Colores específicos para cada red social */
+    .kick {
+        background-color: darkgreen;
+    }
+
+    .instagram {
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+
+    .tiktok {
+        background-color: #000000;
+    }
+
+    .twitch {
+        background-color: blueviolet;
+    }
+
+    .youtube {
+        background-color: darkred;
+    }
+
+    /*wwwwwppppppp*/
+    .whatsapp{
+        background-color: lightgreen;
+    }
+
+    .social-logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+        object-fit: contain;
+    }
+
+
+    /*------------------------------------------------*/
+    /* Estilos para móviles (pantallas menores de 768px) */
+    @media (max-width: 768px) {
+        .container {
+            width: 95%;
+            padding: 1.5rem;
+            margin: 1rem;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-link {
+            padding: 0.8rem;
+        }
+        
+        .social-link i, .social-logo {
+            width: 25px;
+            font-size: 1.3rem;
+        }
+        
+        .social-link span {
+            font-size: 0.9rem;
+        }
+    }
+
+    /* Estilos para móviles muy pequeños (menores de 480px) */
+    @media (max-width: 480px) {
+        .container {
+            padding: 1rem;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            color: black;
+            text-decoration: bold;
+        }
+        
+        .social-link {
+            flex-direction: column;
+            text-align: center;
+            padding: 0.7rem;
+        }
+        
+        .social-link i, .social-logo {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .background {
+            animation: gradientBG 25s ease infinite; /* Más lento para móviles */
+        }
+    }
+
+    .h1 {
+        text-decoration: underline darkgreen;
+        font-family: 'Arial', sans-serif;
+
+
+    }
+
+
+body {
+    background: url(../multimedial/4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
